@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="photofolio">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="photofolio">
+    <meta property="og:description" content="photofolio">
+    <meta property="og:url" content="http://photofolio.com/">
+    <meta property="og:image" content="../image/common/logo.svg">
+    <title>Blue Bottle</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+
+</head>
+
+<body class="main_wrapper">
+    <header class="header" id="header">
+        <div class="container">
+            <h1 class="logo"><a href="javascript:void(0)"><img src="../image/common/logo.svg" alt="bluebottle" /></a></h1>
+            
+            <nav class="menu">
+                <ul class="depth_1">
+                    <li><a href="javascript:void(0)">ABOUT</a>
+                        <ul class="depth_2">
+                            <li><a href="javascript:void(0)">Our Story</a></li>
+                            <li><a href="javascript:void(0)">Our Coffee</a></li>
+                            <li><a href="javascript:void(0)">Brew Guides</a></li>
+                            <li><a href="javascript:void(0)">Cafes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">MENU</a>
+                        <ul class="depth_2">
+                            <li><a href="javascript:void(0)">Coffee</a></li>
+                            <li><a href="javascript:void(0)">Merchandise</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">COMPANY</a>
+                        <ul class="depth_2">
+                            <li><a href="javascript:void(0)">Contact</a></li>
+                            <li><a href="javascript:void(0)">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">NEWS</a></li>
+                </ul>
+                
+                <button type="button" class="menu_btn" onclick="menuOpen()"><span class="blind">메뉴오픈</span></button>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="section visual" id="section_1">
+            <h2 class="blind">비주얼영역</h2>
+            <img src="../image/visual_2.jpg" class="visual_img" alt="비주얼" />
+        </section>
+        
+        <section class="section brand_story contents_center" id="section_2">
+            <div class="brand_story_content">
+                <h2 class="h2_title">Brand Story</h2>
+                <p class="desc">
+                    커피가 가장 맛있는 순간에<br/>
+                    즐거운 대화와 친밀한 조언을 함께 제공합니다.<br/>
+                    우리의 손으로 직접 커피를 전달하는 일이 저희에게 영광의 순간입니다.
+                </p>
+                <a href="javascript:void(0)" class="text_btn">MORE VIEW</a>
+            
+                <div class="image_ticker_area">
+                    <ul class="image_ticker">
+                        <li><img src="../image/img_2.jpg" alt="brand_img_1" /></li>
+                        <li><img src="../image/img_20.jpg" alt="brand_img_2" /></li>
+                        <li><img src="../image/img_5.jpg" alt="brand_img_3" /></li>
+                        <li><img src="../image/img_10.jpg" alt="brand_img_4" /></li>
+                        <li><img src="../image/img_18.jpg" alt="brand_img_5" /></li>
+                        <li><img src="../image/img_22.jpg" alt="brand_img_6" /></li>
+                        <li><img src="../image/img_8.jpg" alt="brand_img_7" /></li>
+                        <li><img src="../image/img_24.jpg" alt="brand_img_8" /></li>
+                    </ul>
+                    <ul class="image_ticker">
+                        <li><img src="../image/img_2.jpg" alt="brand_img_1" /></li>
+                        <li><img src="../image/img_20.jpg" alt="brand_img_2" /></li>
+                        <li><img src="../image/img_5.jpg" alt="brand_img_3" /></li>
+                        <li><img src="../image/img_10.jpg" alt="brand_img_4" /></li>
+                        <li><img src="../image/img_18.jpg" alt="brand_img_5" /></li>
+                        <li><img src="../image/img_22.jpg" alt="brand_img_6" /></li>
+                        <li><img src="../image/img_8.jpg" alt="brand_img_7" /></li>
+                        <li><img src="../image/img_24.jpg" alt="brand_img_8" /></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section contents_center" id="section_3">
+            <div class="container">
+                <h2 class="h2_title">Product</h2>
+                <div class="slider">
+                    <div class="slider_wrapper">
+                        <div class="slide">
+                            <a href="javascript:void(0)" class="img_box"><img src="../image/main_product_2.png" alt="물건1" /></a>
+                            <div class="text_box">
+                                <p class="procut_name">BLUE BOTTLE COFFEE DRIPPER</p>
+                                <p class="name">블루보틀커피 드리퍼</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="javascript:void(0)" class="img_box"><img src="../image/main_product_1.png" alt="물건2" /></a>
+                            <div class="text_box">
+                                <p class="procut_name">COMMUTER CUP 16OZ</p>
+                                <p class="name">커뮤터 컵 16OZ</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="javascript:void(0)" class="img_box"><img src="../image/product_category_3.png" alt="물건3" /></a>
+                            <div class="text_box">
+                                <p class="procut_name">CARTER MOVE MUG</p>
+                                <p class="name">카터 무브 머그</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="javascript:void(0)" class="img_box"><img src="../image/product_category_1.png" alt="물건4" /></a>
+                            <div class="text_box">
+                                <p class="procut_name">SUPERNATURAL PAPER TOTE</p>
+                                <p class="name">슈퍼내츄럴 페이퍼 토트백</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <a href="javascript:void(0)" class="img_box"><img src="../image/product_category_4.png" alt="물건5" /></a>
+                            <div class="text_box">
+                                <p class="procut_name">CRAFT INSTANT ESPRESSO MULTISERVE</p>
+                                <p class="name">다크 로스트</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="slide_btn prev disabled" disabled="disabled"><span class="blind">이전</span></button>
+                    <button class="slide_btn next"><span class="blind">다음</span></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section guides contents_center" id="section_4">
+            <div class="container">
+                <h2 class="h2_title">Brew Guides</h2>
+                
+                <ul class="guides_li">
+                    <li>
+                        <span class="img_box"><img src="../image/img_9.jpg" alt="Brew가이드1" /></span>
+                        <div class="text_box">
+                            <h3 class="title">POUR OVER</h3>
+                            <p class="text">화려한 기술이 아닙니다. 그저 훌륭하고 견고한 기술일 뿐.</p>
+                            <a href="javascript:void(0)" class="more">LEARN MORE</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="img_box"><img src="../image/img_12.jpg" alt="Brew가이드2" /></span>
+                        <div class="text_box">
+                            <h3 class="title">COLD BREW</h3>
+                            <p class="text">커피와 물, 그리고 시간을 더하면 됩니다.</p>
+                            <a href="javascript:void(0)" class="more">LEARN MORE</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="img_box"><img src="../image/img_3.jpg" alt="Brew가이드3" /></span>
+                        <div class="text_box">
+                            <h3 class="title">FRENCH PRESS</h3>
+                            <p class="text">확실하고 정직한 커피</p>
+                            <a href="javascript:void(0)" class="more">LEARN MORE</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="section" id="section_5">
+            <footer class="footer">
+                <div class="container">
+                    <ul class="corporation_li">
+                        <li><a href="javascript:void(0)">이용약관</a></li>
+                        <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                        <li><a href="javascript:void(0)">사업자정보</a></li>
+                    </ul>
+                    
+                    <div>
+                        <ul class="company_info">
+                            <li>
+                                <strong class="tit">Address</strong>
+                                <p class="txt">서울시 성동구 아차산로 7</p>
+                            </li>
+                            <li>
+                                <strong class="tit">Customer Center</strong>
+                                <p class="txt">전화번호 : 1533-6906</p>
+                                <p class="txt">연락시간 : MON-FRI 10:00-17:00</p>
+                            </li>
+                            <li>
+                                <strong class="tit">Connect With Us</strong>
+                                <a href="javascript:void(0)" class="sns insta"><span class="blind">인스타그램</span></a>
+                                <a href="javascript:void(0)" class="sns facebook"><span class="blind">페이스북</span></a>
+                            </li>
+                        </ul>
+                        
+                        <p class="copy">ⓒ 2022 BLUE BOTTLE OFFEE INC., ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        <aside class="fullpage_nav">
+            <button type="button" class="fullpage_btn fullpage_up_move" id="fullpage_up_move"><span class="blind">위로</span></button>
+            <span class="num fullpage_current">1</span>
+            <span class="num fullpage_total">4</span>
+            <button type="button" class="fullpage_btn fullpage_down_move" id="fullpage_down_move"><span class="blind">아래로</span></button>
+        </aside>
+        
+    </main>
+    
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+
+
+

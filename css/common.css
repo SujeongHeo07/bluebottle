@@ -1,0 +1,219 @@
+/*
+function
+*/
+:root {
+    --black-color:#232323;
+    --main-color:#00A1DF;
+}
+
+section {
+    position:relative;
+    width:100%;
+    height:100%;
+    min-height:100vh;
+}
+.container {
+    width:100%;
+    max-width:1520px;
+    margin:0 auto;
+    padding:0 20px;
+    box-sizing: border-box;
+}
+
+/*
+header
+*/
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 0;
+    transition: all .35s;
+    z-index: 90;
+}
+.header.on {
+    padding:20px 0 170px;
+    background:#fff;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+}
+.header .container {
+    clear:both;
+}
+.header .logo {
+    float: left;
+    display:inline-block;
+    vertical-align: middle;
+}
+.header .logo a {
+    display:block;
+    width:40px;
+    height:40px;
+}
+.menu {
+    float: right;
+    height:40px;
+}
+.menu .depth_1 {
+    float: left;
+}
+.menu .depth_1 > li {
+    position:relative;
+    float: left;
+    min-width:120px;
+}
+.menu .depth_1 > li > a {
+    display:block;
+    margin:0 auto;
+    padding:0 18px;
+    font-size:16px;
+    line-height:40px;
+    text-align: center;
+}
+.menu .depth_1 > li:hover > a {
+    color:var(--main-color);
+}
+.menu .depth_2 {
+    display:none;
+    width:100%;
+    padding:8px 0;
+}
+.menu .depth_2 > li {}
+.menu .depth_2 > li > a {
+    display:block;
+    padding:8px 5px;
+    font-size:14px;
+    text-align: center;
+}
+.menu .depth_2 > li > a:hover {
+    color:var(--main-color);
+}
+.menu_btn {
+    float: right;
+    width:40px;
+    height:40px;
+    background:url("../image/common/menu.svg") no-repeat 50% 50% / 20px;
+}
+
+/*
+footer
+*/
+.footer {}
+.corporation_li {
+    display:flex;
+    align-items: center;
+    padding:32px 0 28px;
+    border-bottom:1px solid #EDEDED;
+}
+.corporation_li li:not(:last-child) {
+    margin-right:30px;
+}
+.corporation_li a {
+    font-size:16px;
+}
+.company_info {
+    display:flex;
+    width:100%;
+    padding:30px 0;
+}
+.company_info li {
+    flex:1;
+}
+.company_info .tit {
+    display:block;
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:400;
+}
+.company_info .txt {
+    color:#797979;
+    font-size:14px;
+    line-height:18px;
+}
+.company_info .sns {
+    display:inline-block;
+    vertical-align: middle;
+    width:28px;
+    height:28px;
+    margin-right:4px;
+}
+.company_info .sns.insta {
+    background:url("../image/common/sns_instagram.png") no-repeat 50% 50% / 20px;
+}
+.company_info .sns.facebook {
+    background:url("../image/common/sns_facebook.png") no-repeat 50% 50% / 20px;
+}
+.footer .copy {
+    padding:20px 0 30px;
+    color:#797979;
+    font-size:12px;
+}
+
+
+/*
+contents
+*/
+
+/* 공통타이틀 */
+.h2_title {
+    margin-bottom:36px;
+    color:#898989;
+    font-size:22px;
+    font-weight:500;
+    text-align: center;
+}
+
+/* 이미지 */
+.img_box {
+    position:relative;
+}
+.img_box img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    max-width:100%;
+    object-fit: contain;
+    transform: translate(-50%,-50%);
+}
+
+/*
+미디어쿼리
+*/
+@media screen and (max-width:1520px) {
+}
+@media screen and (max-width:1240px) {
+}
+@media screen and (max-width:1024px) {
+    /* header */
+    .header {padding:10px 0;}
+    .menu .depth_1 > li {min-width:100px;}
+    .menu .depth_1 > li > a {font-size:14px;}
+}
+@media screen and (max-width:768px) {
+    /* header */
+    .menu, .menu .depth_1, .menu .depth_1 > li, .menu_btn {float: none;}
+    .header.on {padding:10px 0;background:rgba(0,0,0,0);box-shadow:0 0 0 rgba(0,0,0,0);}
+    .menu {display:flex;flex-flow: column-reverse;justify-content: flex-end;align-items: flex-end;position: absolute;top: 0;right: -50vw;width: 50vw;height: 100vh;padding:50px 0 0;background:#fff;box-shadow: 1px 1px 4px rgba(0,0,0,0.1); transition:right .35s;box-sizing: border-box;}
+    .header.on .menu {right:0;}
+    .menu .depth_1 {width:100%;}
+    .menu .depth_1 > li > a, .menu .depth_2 > li > a {text-align: start;}
+    .menu .depth_1 > li {border-bottom:1px solid #eee;}
+    .menu .depth_1 > li:has(.depth_2):after {content:"";display:block;position:absolute;top:13px;right:18px;width:14px;height:14px;background:url("../image/common/chevron_right_black.svg") no-repeat 50% 50% / cover;}
+    .menu .depth_2 > li > a {padding:8px 18px;}
+    .menu_btn {position:fixed;top:10px;right:10px;}
+    
+    /* footer */
+    .corporation_li {padding:20px 0 16px;}
+    .corporation_li a {font-size:14px;}
+    .company_info {flex-wrap:wrap;padding:20px 0 0;}
+    .company_info li {flex:initial;width:100%;margin:0 0 16px;}
+    .company_info .tit {margin-bottom:4px;}
+    .company_info .txt {display:inline-block;vertical-align: middle;margin-right:4px;}
+    .footer .copy {padding:0 0 30px;}
+}
+@media screen and (max-width:414px) {
+    .menu {right:-80vw;width:80vw;}
+}
+
+
+
