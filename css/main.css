@@ -14,17 +14,34 @@ visual
 */
 .visual {
     position:relative;
-    overflow: hidden;
 }
-.visual img {
-    position:absolute;
-    top:50%;
-    left:50%;
-    max-width:100%;
-    min-height:100%;
-    object-fit: cover;
-    transform: translate(-50%,-50%);
+.visual .container {
+    min-height:100vh;
+    background: url("../image/visual_bg.png") no-repeat 95% 50% / 40%;
 }
+.visual .text_box {
+    width:100%;
+    padding:20px 0;
+}
+.visual .text_box:before {
+    content:"";
+    display:block;
+    width:27px;
+    height:67px;
+    background:url("../image/common/logo.svg") no-repeat 50% 50% / cover;
+}
+.visual .text_box .title {
+    margin:18px 0;
+    font-size:64px;
+    line-height:1.15;
+    font-weight:700;
+    letter-spacing:-0.2rem;
+}
+.visual .text_box .text {
+    font-size:24px;
+    line-height:1.4;
+}
+
 
 /*
 brand story
@@ -109,6 +126,28 @@ brand story
 /*
 product
 */
+
+/* 배경 */
+#section_2 {
+    position: relative;
+    background:url("../image/main_bg.png") no-repeat 0% 0% / 33.3%;
+}
+#section_3 {
+    position: relative;
+    background:url("../image/main_bg.png") no-repeat -5% 100% / 33.3%;
+}
+#section_3:after {
+    content:"";
+    display:block;
+    position:absolute;
+    right:0;
+    top:-15%;
+    width:33.3%;
+    height:56%;
+    background:url("../image/main_bg.png") no-repeat 50% 50% / 100%;
+    transform: rotate(180deg);
+}
+
 /* 이미지 슬라이드 */
 .slider {
     position:relative;
@@ -132,7 +171,7 @@ product
     height:260px;
     margin:0 auto;
     border-radius: 50%;
-    background:#f9f9f9;
+    /*background:#f9f9f9;*/
 }
 .slide .img_box img {
     max-height:100%;
@@ -182,7 +221,7 @@ Brew Guides
 */
 .guides {
     position:relative;
-    background:#fffcf8 url("../image/coffee_bg.png") no-repeat 100% 10% / 230px;
+    background:#F9F6F0 url("../image/coffee_bg.png") no-repeat 100% 10% / 230px;
 }
 .guides_li {
     display: grid;
@@ -331,7 +370,9 @@ fullpage navigation
 @media screen and (max-width:768px) {
     
     /* visual */
-    .visual .visual_img {content:url("../image/visual_2_m.jpg");}
+    .visual .container {background-size:60%;}
+    .visual .text_box .title {margin:12px 0;font-size:32px;letter-spacing: -0.1rem;}
+    .visual .text_box .text {font-size:16px;}
     
     /* brand story */
     .image_ticker li {min-width:220px;height:120px;margin-right:12px;}
@@ -347,6 +388,9 @@ fullpage navigation
     .guides {padding:60px 0;background:#fffcf8;}
 }
 @media screen and (max-width:414px) {
+    /* visual */
+    .visual .container {align-items: flex-end;background-position:50% 80px;background-size:100%;}
+
     /* guides */
     .guides_li {grid-template-columns:1fr;grid-template-rows: 1fr 1fr 1fr;}
     .guides_li .text_box {padding:12px 0 24px;}
